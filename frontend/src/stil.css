@@ -1,0 +1,82 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f5f7fa;
+  color: #2d3748;
+}
+
+.app { max-width: 1100px; margin: 0 auto; padding: 28px; }
+
+.header {
+  background: linear-gradient(135deg, #4f6d8c 0%, #5b8a99 100%);
+  padding: 26px 34px; border-radius: 14px; margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(79,109,140,0.18);
+}
+.header h1 { color: #fff; font-size: 24px; font-weight: 600; letter-spacing: 0.2px; }
+.header p { color: #e0e9ef; font-size: 14px; margin-top: 8px; }
+
+.tabovi { display: flex; gap: 8px; margin-bottom: 18px; }
+.tab {
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 11px 24px; cursor: pointer; color: #64748b; font-size: 15px;
+  font-weight: 500; transition: all 0.15s;
+}
+.tab:hover { border-color: #5b8a99; color: #4f6d8c; }
+.tab.aktivan {
+  background: #5b8a99; color: #fff; border-color: #5b8a99;
+  box-shadow: 0 2px 8px rgba(91,138,153,0.25);
+}
+
+.kartica {
+  background: #fff; padding: 24px 28px; border-radius: 14px;
+  border: 1px solid #edf1f5; box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  margin-bottom: 18px;
+}
+
+.sekcija-naslov {
+  color: #3d5568; font-size: 20px; font-weight: 600; margin-bottom: 16px;
+}
+
+.metrike { display: flex; gap: 12px; margin: 16px 0; }
+.metrika {
+  flex: 1; background: #f8fafb; padding: 18px; border-radius: 12px;
+  border: 1px solid #eaeef2; border-left: 4px solid #5b8a99; text-align: center;
+}
+.metrika-broj { font-size: 26px; font-weight: 700; color: #3d5568; }
+.metrika-opis { font-size: 13px; color: #7b8794; margin-top: 4px; }
+
+/* POLJA - svetla, meka, citljiva */
+input, select {
+  padding: 11px 14px; border: 1px solid #d8dfe6; border-radius: 10px;
+  font-size: 14px; width: 100%; margin: 6px 0; background: #fff;
+  color: #2d3748; transition: border 0.15s;
+}
+input::placeholder { color: #a0aab5; }
+input:focus, select:focus {
+  outline: none; border-color: #5b8a99; box-shadow: 0 0 0 3px rgba(91,138,153,0.12);
+}
+select { cursor: pointer; }
+select option { color: #2d3748; background: #fff; }
+
+button {
+  background: #5b8a99; color: #fff; border: none; padding: 11px 24px;
+  border-radius: 10px; font-size: 14px; font-weight: 500; cursor: pointer;
+  margin-top: 10px; transition: background 0.15s;
+}
+button:hover { background: #4f6d8c; }
+button:disabled { background: #b8c2cc; cursor: not-allowed; }
+
+label { font-size: 14px; color: #4a5568; font-weight: 500; display: block; margin-top: 8px; }
+
+.nalaz-aktivan {
+  background: #fdf4e7; border-left: 4px solid #dc9a52; padding: 14px 16px;
+  border-radius: 8px; color: #8a5a20;
+}
+.nalaz-stabilan {
+  background: #eaf6ee; border-left: 4px solid #5cad76; padding: 14px 16px;
+  border-radius: 8px; color: #2f6a44;
+}
+.napomena { color: #94a3b0; font-size: 13px; margin-top: 12px; font-style: italic; }
+
+img.presek { width: 100%; border-radius: 10px; border: 1px solid #eaeef2; }
