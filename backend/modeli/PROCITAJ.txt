@@ -1,0 +1,18 @@
+MODELI
+======
+U ovaj folder idu istrenirani nnU-Net modeli sa Google Drive-a. Za svaki model
+preuzmi ceo folder skupa (dovoljni su plans.json, dataset.json i fold_0/checkpoint_final.pth):
+
+  Master/mozak/modeli/nnUNet_results/Dataset001_MsBrain    -> modeli/Dataset001_MsBrain
+  Master/mozak/modeli/nnUNet_results/Dataset021_BrainNew   -> modeli/Dataset021_BrainNew
+  Master/kicma/modeli/nnUNet_results/Dataset013_SpineNOREG -> modeli/Dataset013_SpineNOREG
+
+Primer strukture:
+
+  modeli/Dataset001_MsBrain/nnUNetTrainer_100epochs__nnUNetPlans__3d_fullres/
+      plans.json
+      dataset.json
+      fold_0/checkpoint_final.pth
+
+Folder "validation" i fajlovi checkpoint_best/checkpoint_latest nisu potrebni.
+Stranica "Podesavanja" u aplikaciji pokazuje koji modeli su pronadjeni.

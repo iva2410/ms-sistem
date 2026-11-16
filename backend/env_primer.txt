@@ -1,0 +1,12 @@
+# Kopiraj ovaj fajl pod imenom .env (u istom folderu) i po potrebi izmeni vrednosti.
+
+# Baza podataka (PostgreSQL). Bazu ms_sistem napravi jednom:  CREATE DATABASE ms_sistem;
+MS_BAZA_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/ms_sistem
+
+# Model za kicmu sa dodatnom sekvencom: Dataset012_SpineREG ili Dataset013_SpineNOREG
+MS_KICMA_MULTI=Dataset013_SpineNOREG
+# Poravnanje dodatne sekvence na T2: zasticena (primeni samo ako popravlja) ili bez
+MS_KICMA_REGISTRACIJA=zasticena
+
+# auto = GPU ako postoji, inace CPU
+MS_UREDJAJ=auto
