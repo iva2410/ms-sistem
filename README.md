@@ -149,9 +149,4 @@ Snimci pacijenata, obučeni modeli i rezultati analiza nisu u repozitorijumu. Ko
 javno dostupni skupovi: MS3SEG, MSLesSeg, open_ms_data, MSSEG-2016, MSSEG-2 i
 MS-Multi-Spine. Detalji o skupovima, podeli podataka i rezultatima nalaze se u radu.
 
-## Autor
 
-Iva Blagojević, br. ind. 2137
-Studijski program: Veštačka inteligencija i mašinsko učenje
-Mentor: prof. dr Dragan Janković
-Elektronski fakultet, Univerzitet u Nišu, 2026.
