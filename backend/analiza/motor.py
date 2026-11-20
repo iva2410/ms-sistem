@@ -1,9 +1,3 @@
-"""Segmentacija nnU-Net modelima.
-
-Model se ucitava iz foldera backend/modeli/<Dataset...>/ (plans.json, dataset.json,
-fold_0/checkpoint_final.pth). Mreza se gradi direktno iz plans.json, pa nisu potrebne
-posebne trener klase koriscene u obuci.
-"""
 import json
 import threading
 from pathlib import Path
@@ -91,13 +85,13 @@ def _ucitaj(kljuc: str):
     na_gpu = dev.type == 'cuda'
     prediktor = nnUNetPredictor(
         tile_step_size=0.5, use_gaussian=True,
-        use_mirroring=na_gpu,                 # na CPU bez ogledanja: ~8 puta brze
+        use_mirroring=na_gpu,                 
         perform_everything_on_device=na_gpu, device=dev,
         verbose=False, verbose_preprocessing=False, allow_tqdm=False)
     prediktor.manual_initialization(
         mreza, plans_manager, konfig, [ck['network_weights']], dataset_json,
         ck.get('trainer_name', 'nnUNetTrainer'), ck.get('inference_allowed_mirroring_axes'))
-    _kes.clear()                              # u memoriji drzimo samo jedan model
+    _kes.clear()                            
     _kes[kljuc] = (prediktor, plans_manager, konfig, dataset_json, n_ulaz, ck_putanja.name)
     return _kes[kljuc]
 

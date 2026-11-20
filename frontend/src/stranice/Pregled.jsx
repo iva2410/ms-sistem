@@ -48,7 +48,6 @@ function Tehnika({ t }) {
       <dl>
         <div><dt>Model</dt><dd>{t.model}</dd></div>
         <div><dt>Ulaz</dt><dd>{t.ulaz}</dd></div>
-        <div><dt>Izvršeno na</dt><dd>{t.uredjaj}</dd></div>
         {reg && <div><dt>Poravnanje</dt><dd>
           {reg.metoda}{reg.primenjena && reg.pomeraj_mm != null ? `: pomeraj ${broj(reg.pomeraj_mm, 1)} mm, rotacija ${broj(reg.rotacija_step, 1)}°` : ''}
         </dd></div>}

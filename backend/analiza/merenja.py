@@ -4,7 +4,7 @@ from scipy import ndimage
 
 import konfiguracija as kfg
 
-_STRUKTURA = np.ones((3, 3, 3), int)   # 26-susedstvo
+_STRUKTURA = np.ones((3, 3, 3), int)   
 
 
 def kategorija(p):

@@ -17,7 +17,6 @@ def _ucitaj_env():
         kljuc, vrednost = red.split('=', 1)
         os.environ.setdefault(kljuc.strip(), vrednost.strip().strip('"').strip("'"))
 
-
 _ucitaj_env()
 
 # --- baza ---

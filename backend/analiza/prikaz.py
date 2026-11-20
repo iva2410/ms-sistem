@@ -69,7 +69,6 @@ def _presek(vol, ravan, indeks):
         a = vol[:, indeks, :]
     else:
         a = vol[indeks, :, :]
-    # radioloska konvencija: desna strana pacijenta levo na ekranu, napred/gore na vrhu
     return np.ascontiguousarray(a.T[::-1, ::-1])
 
 
